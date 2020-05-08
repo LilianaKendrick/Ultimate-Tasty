@@ -1,12 +1,11 @@
 const router = require("express").Router();
-const favesController = require("../../controllers/favesController");
+const favesController = require("../../controllers/favesControllers");
 
 // Matches with "/api/faves"
-router.route("/")
-  .post(favesController.create);
+router.route("/").post(favesController.create);
 
 // Matches with "/api/faves/:id"
-router.route('/username/:username').get(favesController.findAll);
+router.route("/username/:username").get(favesController.findAll);
 
 router
   .route("/:id")
