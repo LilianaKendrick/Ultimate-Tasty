@@ -1,8 +1,9 @@
 const router = require("express").Router();
-const ingredientsController = require("../../controllers/ingredientsController");
+const ingredientsController = require("../../controllers/ingredientsControllers");
 
 // Matches with "/api/ingredients"
-router.route("/")
+router
+  .route("/")
   .get(ingredientsController.findAll)
   .post(ingredientsController.create)
   .put(ingredientsController.updateMany);
@@ -14,7 +15,7 @@ router
   .put(ingredientsController.updateById)
   .delete(ingredientsController.remove);
 
-  // Matches with "/api/ingredients/:id"
-router.route('/username/:username').get(ingredientsController.findAll);
+// Matches with "/api/ingredients/:id"
+router.route("/username/:username").get(ingredientsController.findAll);
 
 module.exports = router;
