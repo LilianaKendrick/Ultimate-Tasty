@@ -6,6 +6,14 @@ Hoping to create a digital cookbook with an inventory of recipes on hand, this i
 
 - You can see a version of my creation here <https://cryptic-gorge-20781.herokuapp.com/>
 
+# Installing
+
+- Git clone the repo here.
+
+- Navigate to Ulitamley Tasty folder and "npm install" to install the required dependencies.
+
+- Navigate to root directory and "npm start" to start to main folder!
+
 # Builting With
 
 - React
